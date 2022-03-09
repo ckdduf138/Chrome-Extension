@@ -1,6 +1,13 @@
 {
-    "name": "First Extension",
-    "description": "My first Chrome Extension!",
-    "version": "1.0",
-    "manifest_version": 3
+  "name": "Chorme Extension",
+  "description": "Chrome Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+      "service_worker": "background.js"
   }
+
+}
