@@ -1,17 +1,19 @@
 {
-  "name": "Chorme Extension",
-  "description": "Chrome Extension!",
+  "name": "First Extension",
+  "description": "My first Chrome Extension!",
   "version": "1.0",
   "manifest_version": 3,
-  "action": {
-    "default_popup": "popup/popup.html",
-    "default_icon": {
-     },
-    "icons": {
-    }
-  },
   "background": {
-      "service_worker": "background.js"
+    "service_worker": "background.js"
   },
-  "options_page": "option/option.html"
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+    "run_at": "document_end",
+    "matches": ["*://*/*"],
+    "js": ["contentScript.js"]
+    }
+  ]
 }
