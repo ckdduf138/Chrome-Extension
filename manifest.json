@@ -1,13 +1,13 @@
 {
-  "name": "First Extension",
-  "description": "My first Chrome Extension!",
+  "name": "AD BLOCK",
+  "description": "광고 제거",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup/popup.html"
   },
   "content_scripts": [
     {
